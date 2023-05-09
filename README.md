@@ -1,28 +1,24 @@
 
-# 데이터 셋 설명
-#### 데이터는 2020 년 2 월부터 2022 년 2 월까지의 자료를 사용하였으며 종속변수는 모바일쇼핑 거래액, 설명 변수로는 월별 코로나 확진자 수, 월별 택배 매출액, 상위 5 개 모바일 쇼핑몰 어플리케이션 누적 활성 이용자 수로 설정하였다.
+# Dataset Description
+#### Data from February 2020 to February 2022 were used, and the dependent variable was set as mobile shopping transactions, the number of monthly COVID-19 confirmed cases, monthly courier sales, and the cumulative active users of the top five mobile shopping mall applications.
 
-#### 모바일 쇼핑몰 거래액은 통계청에서 매월 발표 하는『온라인 쇼핑 동향 조사』보고서를 이용 하였으며, 연간 매출액이 24 백만 이상인 쇼핑몰을 기준으로 쇼핑몰 매출액의 월별 데이터를 활용하였다.
+#### For mobile shopping mall transactions, the "Online Shopping Trend Survey" report released every month by the National Statistical Office was used, and monthly data of shopping mall sales were used based on shopping malls with annual sales of more than 24 million.
 
-#### 코로나 데이터의 경우 코로나 관련 데이터를 정확하고 신속하게 제공하는 질병관리청 질병 보건통합관리시스템 자료를 이용하였으며, 일자별 데이터를 이용하여 이를 월별 데이터로 활용하였다.
+#### In the case of COVID-19 data, data from the Korea Centers for Disease Control and Prevention's disease and health integrated management system, which accurately and quickly provides COVID-19-related data, were used as monthly data using date data.
 
-#### 월별 택배 매출액은 국가물류통합정보시스템의 월별 생활물류통계를 사용하였으며, 기준년도를 2020 년 2 월부터 2022 년 2 월까지 지정하여 데이터를 수집하였다.
+#### Monthly parcel delivery sales used monthly living logistics statistics of the National Logistics Integrated Information System, and data were collected by designating the base year from February 2020 to February 2022.
 
 
-아래의 <표 1-1>은 해당 분석에서 사용한 종속변수 및 독립변수의 단위 및 설명이다.
-![image](https://user-images.githubusercontent.com/105573554/236970371-3304328b-672b-48de-aa35-213206458ccb.png)
-```
-<표 1-1> 종속변수 및 독립변수
-```
+
 
 # 분석 방법
-##### 각 변수별로 추세를 확인 한 뒤 이전 시차와 현재 시차의 차이를 통해 변동성을 확인 하였음.
-##### 등분산성의 경우 로그 변환을 통해 해결
-##### 이후 OLS의 4가지 기본 가정인 선형성, 독립성, 등분산성, 정규성에 대한 다음과 같은검토를 진행하였음.
-##### 정규성 - Shapiro-Wilk
-##### 등분산성 - Goldfeld-Quandt 
-##### 독립성 - Durbin-watson
-##### 선형성 - Residual plot
+#####  After checking the trend for each variable, volatility was confirmed through the difference between the previous time difference and the current time difference.
+##### For isodispersion, resolve with log conversion
+##### Since then, the following review has been conducted on the four basic assumptions of OLS: linearity, independence, equal dispersion, and normality.
+##### normality - Shapiro-Wilk
+##### homoskedasticity - Goldfeld-Quandt 
+##### independence - Durbin-watson
+##### linearity - Residual plot
 
 
 
